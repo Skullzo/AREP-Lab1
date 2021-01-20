@@ -7,9 +7,11 @@ Para la realización y ejecución tanto del programa como de las pruebas de este
 * [GIT](https://git-scm.com/). Sistema de control de versiones que almacena cambios sobre un archivo o un conjunto de archivos, permite recuperar versiones previas de esos archivos y permite otras cosas como el manejo de ramas (branches).
 ## Instalación
 Para descargar el proyecto de GitHub, primero debemos clonar este repositorio, ejecutando la siguiente línea de comando en GIT.
+
 ```
 git clone https://github.com/Skullzo/AREP-Lab1.git
 ```
+
 ## Ejecución
 asd
 ## Pruebas
