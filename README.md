@@ -6,7 +6,8 @@ Para la realización y ejecución tanto del programa como de las pruebas de este
 * [Maven](https://maven.apache.org/). Herramienta que se encarga de estandarizar la estructura física de los proyectos de software, maneja dependencias (librerías) automáticamente desde repositorios y administra el flujo de vida de construcción de un software.
 * [GIT](https://git-scm.com/). Sistema de control de versiones que almacena cambios sobre un archivo o un conjunto de archivos, permite recuperar versiones previas de esos archivos y permite otras cosas como el manejo de ramas (branches).
 ## Instalación
-asd
+Para descargar el proyecto de GitHub, primero debemos clonar este repositorio, ejecutando la siguiente línea de comando en GIT.
+```git clone https://github.com/Skullzo/AREP-Lab1.git```
 ## Ejecución
 asd
 ## Pruebas
