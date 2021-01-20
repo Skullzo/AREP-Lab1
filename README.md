@@ -1,4 +1,4 @@
-# Taller Ejercicio Maven y git
+# Taller Ejercicio Maven y GIT
 ## Descripción
 asd
 ## Prerrequisitos
@@ -15,4 +15,5 @@ asd
 Alejandro Toro Daza
 ## Licencia & Derechos de Autor
 © Alejandro Toro Daza, Estudiante de Ingeniería de Sistemas
+
 Licencia bajo la [GNU General Public License](http://www.gnu.org/licenses/gpl-3.0.html)
