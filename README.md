@@ -35,4 +35,4 @@ Alejandro Toro Daza
 ## Licencia & Derechos de Autor
 **©** Alejandro Toro Daza, Estudiante de Ingeniería de Sistemas de la Escuela Colombiana de Ingeniería Julio Garavito
 
-Licencia bajo la [GNU General Public License](http://www.gnu.org/licenses/gpl-3.0.html).
+Licencia bajo la [GNU General Public License](https://github.com/Skullzo/AREP-Lab1/blob/main/LICENSE).
