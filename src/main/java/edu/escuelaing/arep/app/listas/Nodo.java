@@ -1,67 +1,63 @@
 package main.java.edu.escuelaing.arep.app.listas;
-
+/**
+ * Clase encargada de todos los nodos en los cuales se almacena la informaci髇.
+ * @author  Alejandro Toro Daza
+ * @version 1.0.  (20 de Enero del 2021) 
+ */
 public class Nodo<E> {
     private E data;
     private Nodo<E> next = null;
     private Nodo<E> prior = null;
-
     /**
-     * Constructor de la clase Node.
+     * M閠odo constructor de la clase Nodo.
      */
     public Nodo() {
     }
-
     /**
-     * Constructor de la clase Node.
-     * @param data ingresa la informaci贸n que se va a almacenar en este nodo.
+     * M閠odo constructor de la clase Nodo.
+     * @param data Par醡etro que ingresa la informaci髇 que se va a almacenar en el nodo.
      */
     public Nodo(E data) {
         this.data = data;
     }
-
     /***
-     * Actualiza la informaci贸n que almacena este nodo.
-     * @param data La nueva informaci贸n que se va a almacenar en este nodo.
+     * M閠odo encargado de actualizar la informaci髇 que se almacena en este nodo.
+     * @param data Par醡etro que representa la nueva informaci髇 que se va a almacenar en el nodo.
      */
     public void setData(E data) {
         this.data = data;
     }
-
     /**
-     * Actualiza cual es el nodo siguiente del nodo actual.
-     * @param next El nuevo nodo siguiente al nodo actual
+     * M閠odo encargado de actualizar los nodos siguientes.
+     * @param next Par醡etro que representa el nuevo nodo siguiente.
      */
     public void setNext(Nodo<E> next) {
         this.next = next;
     }
-
     /**
-     * Obtiene la informaci贸n que almacena este nodo.
-     * @return Datos del nodo
+     * M閠odo que se encarga de obtener la informaci髇 que almacena el nodo.
+     * @return Retorna los datos del nodo en cuesti髇.
      */
     public E getData() {
         return data;
     }
-
     /**
-     * Obtiene cual es el nodo siguiente del nodo actual.
-     * @return El nodo siguiente al nodo actual.
+     * M閠odo que se encarga de obtener el nodo siguiente.
+     * @return Retorna el nodo siguiente.
      */
     public Nodo<E> getNext() {
         return next;
     }
-
     /**
-     * Obtiene el anterior nodo del nodo actual.
-     * @return El anterior nodo del nodo actual.
+     * M閠odo que se encarga de obtener el nodo anterior.
+     * @return Retorna el nodo anterior.
      */
     public Nodo<E> getPrior() {
         return prior;
     }
-
     /**
-     * Actualiza cual es el nodo anterior del nodo actual.
-     * @param prior El nuevo nodo anterior al nodo actual.
+     * M閠odo que se encarga de actualizar el nodo anterior.
+     * @param prior Par醡etro que indica el nuevo nodo anterior.
      */
     public void setPrior(Nodo<E> prior) {
         this.prior = prior;

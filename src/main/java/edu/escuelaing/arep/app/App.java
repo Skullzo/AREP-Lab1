@@ -4,16 +4,21 @@ import main.java.edu.escuelaing.arep.app.listas.ListaEnlazada;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.text.DecimalFormat;
+/**
+ * Clase encargada de llevar a cabo la ejecución de todo el programa.
+ * @author  Alejandro Toro Daza
+ * @version 1.0.  (20 de Enero del 2021) 
+ */
 public class App {
     /**
-     * Metodo principal de la clase App.
-     * @param args Lista de los elementos que se quieren evaluar.
+     * Método principal main que se encarga del funcionamiento de toda la clase App.
+     * @param args Parámetro que indica la lista de los elementos a evaluar.
      */
     public static void main( String[] args ) {
         try {
         	ListaEnlazada<Double> elementos;
             String sCadena;
-            BufferedReader bf = new BufferedReader(new FileReader("data.txt"));
+            BufferedReader bf = new BufferedReader(new FileReader("Valores.txt"));
             double n;
             while ((sCadena = bf.readLine())!=null) {
                 elementos = new ListaEnlazada<Double>();
@@ -26,18 +31,17 @@ public class App {
             }
             bf.close();
         }catch (Exception  e){
-            System.out.println("Error.");
+            System.out.println("Se ha presentado un Error.");
         }
     }
-
     /**
-     * Obtiene la media y la desviaciÃ³n estandar de los datos ingresados.
-     * @param elementos Lista que contiene los elementos a evaluar.
+     * Método encargado de obtener la media y la desviación estándar (obtenida a través de la varianza) de los datos ingresados.
+     * @param elementos Parámetro que indica los elementos de la lista.
      */
     public static void calcular(ListaEnlazada<Double> elementos){
         DecimalFormat twoDForm = new DecimalFormat("#.##");
-        double mean = Calculadora.media(elementos);
-        double deviation = Calculadora.desviacionEstandar(elementos);
-        System.out.println("Mean: " + twoDForm.format(mean) + " Deviation: "+ twoDForm.format(deviation));
+        double media = Calculadora.media(elementos);
+        double desviacionEstandar = Calculadora.desviacionEstandar(elementos);
+        System.out.println("Media: " + twoDForm.format(media) + ", Desviación Estándar: "+ twoDForm.format(desviacionEstandar));
     }
 }
