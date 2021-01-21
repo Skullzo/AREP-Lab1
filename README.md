@@ -31,7 +31,7 @@ mvn test
 * [Eclipse](https://www.eclipse.org/ide/). Eclipse es un entorno de desarrollo integrado (IDE) utilizado en programación de computadoras. Contiene un espacio de trabajo básico y un sistema de complementos extensible para personalizar el entorno. Eclipse está escrito principalmente en Java y su uso principal es para desarrollar aplicaciones Java, pero también se puede usar para desarrollar aplicaciones en otros lenguajes de programación a través de complementos (plug-ins).
 * [Java](https://www.oracle.com/java/). Lenguaje de programación de propósito general, es decir, que sirve para muchas cosas, para web, servidores, aplicaciones móviles, entre otros. Java también es un lenguaje orientado a objetos, y con un fuerte tipado de variables.
 ## Autor
-Alejandro Toro Daza
+[Alejandro Toro Daza](https://github.com/Skullzo)
 ## Licencia & Derechos de Autor
 **©** Alejandro Toro Daza, Estudiante de Ingeniería de Sistemas de la Escuela Colombiana de Ingeniería Julio Garavito
 
