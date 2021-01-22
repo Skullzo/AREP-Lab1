@@ -8,21 +8,21 @@ import java.util.Iterator;
 public class Iterador<E> implements Iterator<E> {
     Nodo<E> current;
     /**
-     * Método constructor de la clase Iterador.
+     * Metodo constructor de la clase Iterador.
      * @param actual Nodo en el que se encuentra el Iterador.
      */
     public Iterador(Nodo<E> actual) {
         current = actual;
     }
     /**
-     * Método encargado de realizar la respectiva verificación si el actual nodo tiene un nodo siguiente.
+     * Metodo encargado de realizar la respectiva verificacion si el actual nodo tiene un nodo siguiente.
      * @return boolean
      */
     public boolean hasNext() {
         return current != null;
     }
     /**
-     * Método encargado de obtener el valor del nodo actual.
+     * Metodo encargado de obtener el valor del nodo actual.
      * @return E Elemento.
      */
     public E next() {

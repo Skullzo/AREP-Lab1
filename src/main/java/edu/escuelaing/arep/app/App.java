@@ -5,14 +5,14 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 import java.text.DecimalFormat;
 /**
- * Clase encargada de llevar a cabo la ejecución de todo el programa.
+ * Clase encargada de llevar a cabo la ejecucion de todo el programa.
  * @author  Alejandro Toro Daza
  * @version 1.0.  (20 de Enero del 2021) 
  */
 public class App {
     /**
-     * Método principal main que se encarga del funcionamiento de toda la clase App.
-     * @param args Parámetro que indica la lista de los elementos a evaluar.
+     * Metodo principal main que se encarga del funcionamiento de toda la clase App.
+     * @param args Parametro que indica la lista de los elementos a evaluar.
      */
     public static void main( String[] args ) {
         try {
@@ -35,8 +35,8 @@ public class App {
         }
     }
     /**
-     * Método encargado de obtener la media y la desviación estándar (obtenida a través de la varianza) de los datos ingresados.
-     * @param elementos Parámetro que indica los elementos de la lista.
+     * Metodo encargado de obtener la media y la desviacion estandar (obtenida a traves de la varianza) de los datos ingresados.
+     * @param elementos Parametro que indica los elementos de la lista.
      */
     public static void calcular(ListaEnlazada<Double> elementos){
         DecimalFormat twoDForm = new DecimalFormat("#.##");

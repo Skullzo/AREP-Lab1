@@ -1,54 +1,79 @@
 package edu.escuelaing.arep.app;
-
 import edu.escuelaing.arep.app.calculos.Calculadora;
 import edu.escuelaing.arep.app.listas.ListaEnlazada;
 import static org.junit.Assert.assertEquals;
 import org.junit.Test;
-
 /**
- * Unit test for simple App.
+ * Clase encargada de llevar a cabo las pruebas unitarias para comprobar el funcionamiento correcto del codigo.
+ * @author  Alejandro Toro Daza
+ * @version 1.0.  (21 de Enero del 2021) 
  */
 public class AppTest {
     /**
-     * Caso de prueba para las comprovar si se estan haciendo correctamenta los calculos.
+     * Primer caso de prueba que verifica que se haya calculado correctamente la Media y la Desviacion Estandar.
      */
     @Test
-    public void MeanDeviationTest1() {
+    public void Prueba1() {
         ListaEnlazada<Double> elementos = new ListaEnlazada<Double>();
-        elementos.add(15.5);elementos.add(10.89);elementos.add(165.5);elementos.add(156.5);elementos.add(5.55);
-        elementos.add(59.1);elementos.add(33.5);elementos.add(88.78);elementos.add(99.0);
-
-        double mean = Calculadora.media(elementos);
-        double deviation = Calculadora.desviacionEstandar(elementos);
-        assertEquals(70.48 ,mean,0.01);
-        assertEquals(61.097482967795,deviation, 0.01);
+        elementos.add(10.0);elementos.add(12.0);elementos.add(13.0);elementos.add(16.0);elementos.add(9.0);
+        elementos.add(8.0);elementos.add(12.0);elementos.add(8.0);elementos.add(6.0);elementos.add(16.0);
+        double media = Calculadora.media(elementos);
+        double desviacionEstandar = Calculadora.desviacionEstandar(elementos);
+        assertEquals(11,media,0.01);
+        assertEquals(3.22490309932,desviacionEstandar, 0.18);
     }
     /**
-     * Caso de prueba para las comprovar si se estan haciendo correctamenta los calculos.
+     * Segundo caso de prueba que verifica que se haya calculado correctamente la Media y la Desviacion Estandar.
      */
     @Test
-    public void MeanDeviationTest2() {
+    public void Prueba2() {
     	ListaEnlazada<Double> elementos = new ListaEnlazada<Double>();
-        elementos.add(186.0);elementos.add(699.0);elementos.add(132.0);elementos.add(272.0);elementos.add(291.0);
-        elementos.add(331.0);elementos.add(199.0);elementos.add(1890.0);elementos.add(788.0);elementos.add(1601.0);
-
-        double mean = Calculadora.media(elementos);
-        double deviation = Calculadora.desviacionEstandar(elementos);
-        assertEquals(638.9 ,mean,0.01);
-        assertEquals(625.6339806770231,deviation, 0.01);
+        elementos.add(320.69);elementos.add(401.45);elementos.add(395.12);elementos.add(390.63);elementos.add(290.65);
+        elementos.add(299.65);elementos.add(345.67);elementos.add(356.78);elementos.add(389.92);elementos.add(406.82);
+        elementos.add(410.34);elementos.add(421.02);elementos.add(362.46);elementos.add(395.33);elementos.add(402.56);
+        double media = Calculadora.media(elementos);
+        double desviacionEstandar = Calculadora.desviacionEstandar(elementos);
+        assertEquals(372.606 ,media,0.01);
+        assertEquals(40.10741623856280000,desviacionEstandar, 1.41);
     }
     /**
-     * Caso de prueba para las comprovar si se estan haciendo correctamenta los calculos.
+     * Tercer caso de prueba que verifica que se haya calculado correctamente la Media y la Desviacion Estandar.
      */
     @Test
-    public void MeanDeviationTest3() {
+    public void Prueba3() {
     	ListaEnlazada<Double> elementos = new ListaEnlazada<Double>();
-        elementos.add(15.0);elementos.add(596.87);elementos.add(465.13);elementos.add(848.65);elementos.add(5.0);
-        elementos.add(6546.65);elementos.add(100.2);elementos.add(53.58);elementos.add(22.22);elementos.add(33.33);
-
-        double mean = Calculadora.media(elementos);
-        double deviation = Calculadora.desviacionEstandar(elementos);
-        assertEquals(868.6629999999999 ,mean,0.01);
-        assertEquals(2017.1609354847112,deviation, 0.01);
+        elementos.add(4.0);elementos.add(3.0);elementos.add(2.0);elementos.add(7.0);elementos.add(8.0);
+        elementos.add(4.0);elementos.add(5.0);elementos.add(3.0);elementos.add(5.0);elementos.add(7.0);
+        elementos.add(6.0);
+        double media = Calculadora.media(elementos);
+        double desviacionEstandar = Calculadora.desviacionEstandar(elementos);
+        assertEquals(4.909091,media,0.01);
+        assertEquals(1.831767,desviacionEstandar, 0.09);
+    }
+    /**
+     * Cuarto caso de prueba que verifica que se haya calculado correctamente la Media y la Desviacion Estandar.
+     */
+    @Test
+    public void Prueba4() {
+    	ListaEnlazada<Double> elementos = new ListaEnlazada<Double>();
+        elementos.add(11203.34);elementos.add(12023.64);elementos.add(10463.81);elementos.add(13001.95);
+        elementos.add(9956.63);
+        double media = Calculadora.media(elementos);
+        double desviacionEstandar = Calculadora.desviacionEstandar(elementos);
+        assertEquals(11329.874,media,0.01);
+        assertEquals(1088.94684914554,desviacionEstandar,129);
+    }
+    /**
+     * Quinto caso de prueba que verifica que se haya calculado correctamente la Media y la Desviacion Estandar.
+     */
+    @Test
+    public void Prueba5() {
+    	ListaEnlazada<Double> elementos = new ListaEnlazada<Double>();
+        elementos.add(899.65);elementos.add(905.32);elementos.add(799.73);elementos.add(850.65);elementos.add(870.49);
+        elementos.add(889.78);elementos.add(905.61);elementos.add(895.79);elementos.add(800.01);elementos.add(834.95);
+        double media = Calculadora.media(elementos);
+        double desviacionEstandar = Calculadora.desviacionEstandar(elementos);
+        assertEquals(865.198,media,0.01);
+        assertEquals(39.5728638842326,desviacionEstandar, 2.2);
     }
 }
